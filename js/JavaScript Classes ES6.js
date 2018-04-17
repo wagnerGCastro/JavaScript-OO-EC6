@@ -1,5 +1,4 @@
 'use sctrict';
-//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
 
 // ===============================================================//
 //    Example 1: Creating a new class (Declarando classes)		  //
@@ -17,6 +16,7 @@
 	// Uma Expressão de Classe (class expression) é outra forma para definir classes. 
 	// Expressões de Classes podem possuir nomes ou não (anônimas). O nome dado para 
 	// uma expressão de classe é local ao corpo da classe.
+	
 	// sem nome
 	var Retang = class {
 	  	constructor(altura, largura) {
@@ -31,8 +31,7 @@
 	    	this.largura = largura;
 	  	}
 	}
-	// Nota: As expressões de classe tambem sofrem com o mesmo problema de hoisted 
-	// mencionados em declarações de classe.
+	// Nota: As expressões de classe tambem sofrem com o mesmo problema de hoisted mencionados em declarações de classe.
 
 // =============================================================== //
 // 	  Example 3: Corpo de uma classe e definições de métodos 	   //
@@ -126,7 +125,7 @@
 
 
 // =============================================================== //
-// 	Example 6: Sub classes com o extends  //
+// 	Example 6: Sub classes com o extends                           //
 // =============================================================== //
 	// A palavra-chave extends é usada em uma declaração de classe, ou em uma expressão de 
 	// classe para criar uma classe como filha de uma outra classe.
@@ -246,7 +245,6 @@
 		falar() {
 			console.log( this.nome + ' solta rugidos' );
 			return super.falar();
-			
 		}
 	}
 	var l1 = new Leao1('Rei Leão');
@@ -254,7 +252,6 @@
 	$( ".p1" ).append('<p><pre>'+ Gato1.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Leao1.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p> 1- '+ l1.falar() +'</pre></p>');  // faça barulho
-	
 	
 // =============================================================== //
 // 	Example 9: Subclasses abstratas ou mix-ins				   	   //
