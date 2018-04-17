@@ -1,0 +1,54 @@
+#/h3 { font:bold 60px/46px 'italiannoregular' ; margin-top: 20px; margin-bottom: 20px;}
+#/h3 { font:bold 60px/46px 'nastyregular' ; margin-top: 20px; margin-bottom: 20px;}
+#/h3 { font:100 60px/46px  'Teko', sans-serif; margin-top: 20px; margin-bottom: 20px;}
+#/h3 { font:800 60px/23px  'poiret_oneregular'; margin-top: 30px; margin-bottom: 30px;}
+#/h3 { font:900 60px/23px  'shrikhandregular'; margin-top: 30px; margin-bottom: 30px;}
+#/h1 { font:800 'esenciaregular'; text-shadow: 4px 4px 4px #999;}
+#/h1 span{  }
+
+
+/* RESET
+--------------------------------------------------  */
+* {margin:0; pading:0; font-size: 100%; border:none; outline:none; font-weight:300px;box-sizing: border-box; }
+
+body,html, #corpo_site, select, option,button, p, span, button, label,
+input[type="date"],input[type="text"], input[type="file"],input[type="password"] {font:800 12x/13px  'esenciaregular';}
+
+/* 
+body {font:800 18px/23px  'poiret_oneregular';}
+body { background: ;}
+h2 {font:800 20px/23px  'poiret_oneregular';}
+h3 {font:800 18px/23px  'poiret_oneregular';}
+h4 {font:800 16px/23px  'poiret_oneregular';}
+h4 {font:800 14px/23px  'poiret_oneregular';}
+a{ text-decoration: none; font:800 15px/23px  'poiret_oneregular'; outline: none !important; text-decoration:none;}
+a:hover{ text-decoration: none !important;}
+a:active {outline-style: none !important;}
+ul{list-style:none;}
+#/img{max-width:100%;}
+input[type="date"]{color: #777; font:800 12px/23px  'poiret_oneregular';}
+
+*/
+
+
+/* Corpo do site
+--------------------------------------------------  */
+body { background:#eeeeee ;}
+#corpo_site {width: ; margin:1% auto; border: 0px solid #eeeeee; z-index:100; background:#ffffff; }
+#tela_1 {background: #fff; border: 0px solid #ccc; padding: 1% 1%; margin: 0 0 30px 0; }
+#tela_2 {background: #fff; border: 0px solid #ccc; padding: 1% 1%; margin: 0 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
