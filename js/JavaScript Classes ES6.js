@@ -1,7 +1,7 @@
 'use sctrict';
 
 // ===============================================================//
-//    Example 1: Creating a new class (Declarando classes)		  //
+//    Exemplo 1: Creating a new class (Declarando classes)		  //
 // ===============================================================//
 	class Retangle {
 		constructor(altura, largura) {
@@ -11,7 +11,7 @@
 	}
 
 // =============================================================== //
-//	  Example 2:  Expressões de Classes 	   					   //
+//	  Exemplo 2:  Expressões de Classes 	   					   //
 // =============================================================== //
 	// Uma Expressão de Classe (class expression) é outra forma para definir classes. 
 	// Expressões de Classes podem possuir nomes ou não (anônimas). O nome dado para 
@@ -34,7 +34,7 @@
 	// Nota: As expressões de classe tambem sofrem com o mesmo problema de hoisted mencionados em declarações de classe.
 
 // =============================================================== //
-// 	  Example 3: Corpo de uma classe e definições de métodos 	   //
+// 	  Exemplo 3: Corpo de uma classe e definições de métodos 	   //
 // =============================================================== //
 	class Retangulo {
 	    constructor(altura, largura) {
@@ -60,7 +60,7 @@
 		}
 	}
 	const quadrado = new Retangulo(10, 13.3);
-	$( ".p1" ).append('<p><hr><h4>Example 3: Corpo de uma classe e definições de métodos </h4></p>');  
+	$( ".p1" ).append('<p><hr><h4>Exemplo 3: Corpo de uma classe e definições de métodos </h4></p>');  
 	$( ".p1" ).append('<p> <pre>'+ Retangulo.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p>' + quadrado.verName() + ' </p>'); 
 	// getters
@@ -71,7 +71,7 @@
 	$( ".p1" ).append('<p>' + quadrado.calculaArea() + '  => setando area');
 
 // =============================================================== //
-// 	  Example 4: Métodos estáticos 	   							   //
+// 	  Exemplo 4: Métodos estáticos 	   							   //
 // =============================================================== //
 	class Ponto {
 	    constructor(x, y) {
@@ -87,13 +87,13 @@
 	const p1 = new Ponto(5, 5);
 	const p2 = new Ponto(10, 10);
 	console.log(Ponto.distancia(p1, p2));
-	$( ".p1" ).append('<p><hr><h4>Example 4: Métodos estáticos</h4></p>');  
+	$( ".p1" ).append('<p><hr><h4>Exemplo 4: Métodos estáticos</h4></p>');  
 	$( ".p1" ).append('<p> <pre>'+ Ponto.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p>' + JSON.stringify(p2).toString() + ' </p>');  // undefined
 	$( ".p1" ).append('<p>' + Ponto.distancia(p1, p2) + ' </p>');  // undefined
 
 // =============================================================== //
-// 	  Example 5: Empacotando com protótipos e métodos estáticos    //
+// 	  Exemplo 5: Empacotando com protótipos e métodos estáticos    //
 // =============================================================== //
 	class Animal {
 		falar() { return this ;}
@@ -102,7 +102,7 @@
 
 	let ani = new Animal();
 	let comer = Animal.comer;
-	$( ".p1" ).append('<p><hr><h4>Example 5: Empacotando com protótipos e métodos estáticos</h4></p>');  // Animal {}
+	$( ".p1" ).append('<p><hr><h4>Exemplo 5: Empacotando com protótipos e métodos estáticos</h4></p>');  // Animal {}
 	$( ".p1" ).append('<p><pre>'+ Animal.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p> 1- ' + JSON.stringify(ani.falar()).toString() + '</p>');  // Animal {}
 	$( ".p1" ).append('<p> 2- ' + ani.falar.toString() + '  </p>');  // Animal {}
@@ -125,7 +125,7 @@
 
 
 // =============================================================== //
-// 	Example 6: Sub classes com o extends                           //
+// 	Exemplo 6: Sub classes com o extends                           //
 // =============================================================== //
 	// A palavra-chave extends é usada em uma declaração de classe, ou em uma expressão de 
 	// classe para criar uma classe como filha de uma outra classe.
@@ -139,7 +139,7 @@
 	var d1 = new Cachorro1('Mat');
 	// important: Se existir um contrutor nas subclasses, é necessário primeiro 
 	// chamar super() antes de usar a keyword "this".
-	$( ".p1" ).append('<p><hr><h4>Example 6: Sub classes com o extends</h4></p>'); 
+	$( ".p1" ).append('<p><hr><h4>Exemplo 6: Sub classes com o extends</h4></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Animal3.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p> 1- '+ d1.falar() +'</pre></p>'); 
 
@@ -191,7 +191,7 @@
 
 
 // =============================================================== //
-// 	Example 7: Species											   //
+// 	Exemplo 7: Species											   //
 // =============================================================== //
 	// O padrão Species permite a sobrescrita do construtor padrão.	
 	// Por exemplo, quando utilizando um método como map() que retorna o construtor padrão, 
@@ -217,7 +217,7 @@
 	const arr2 = new MyArray2([23,2,45]);
 	const arr3 = arr2.getArray.map( function(x){  return x * 2; } );
 	
-	$( ".p1" ).append('<p><hr><h4>Example 7: Species</h4></p>'); 
+	$( ".p1" ).append('<p><hr><h4>Exemplo 7: Species</h4></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Array1.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p><pre>'+ MyArray2.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p> 1- '+ JSON.stringify(arr1.getArray) +'</pre></p>'); 
@@ -229,7 +229,7 @@
 	console.log(arr2 instanceof MyArray2); // false
 
 // =============================================================== //
-// 	Example 8: Chamada da classe pai com super					   //
+// 	Exemplo 8: Chamada da classe pai com super					   //
 // =============================================================== //
 	// A palavra-chave (keyword) super é utilizada para chamar funções que pertencem
 	// ao pai do objeto.
@@ -248,13 +248,13 @@
 		}
 	}
 	var l1 = new Leao1('Rei Leão');
-	$( ".p1" ).append('<p><hr><h4>Example 8: Chamada da classe pai com Super</h4></p>'); 
+	$( ".p1" ).append('<p><hr><h4>Exemplo 8: Chamada da classe pai com Super</h4></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Gato1.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Leao1.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p> 1- '+ l1.falar() +'</pre></p>');  // faça barulho
 	
 // =============================================================== //
-// 	Example 9: Subclasses abstratas ou mix-ins				   	   //
+// 	Exemplo 9: Subclasses abstratas ou mix-ins				   	   //
 // =============================================================== //
 	// Subclasses abstratas ou mix-ins são templates para classes. Uma classe do 
 	// ECMAScript pode apenas ter uma classe pai, assim sendo, não é possível a 
@@ -289,7 +289,7 @@
 	const HumanoFinal = HumanoFalanteMixado( HumanoFeliz(HumanoFalante(Humano)) );
 	const humano = new HumanoFinal('Bill Gates')
 
-	$( ".p1" ).append('<p><hr><h4>Example 9: Subclasses abstratas ou mix-ins </h4></p>'); 
+	$( ".p1" ).append('<p><hr><h4>Exemplo 9: Subclasses abstratas ou mix-ins </h4></p>'); 
 	$( ".p1" ).append('<p><pre>'+ Humano.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p><pre>'+ HumanoFalante.toString()+'</pre></p>'); 
 	$( ".p1" ).append('<p><pre>'+ HumanoFeliz.toString()+'</pre></p>'); 
