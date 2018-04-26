@@ -1,12 +1,5 @@
 'use sctrict';
 
-/*
- * author: wagner
- * description: Classes com EC6
- * date: 12/03/2017
- *
-*/
-
 // ===============================================================//
 //    Exemplo 1: Creating a new class (Declarando classes)		  //
 // ===============================================================//
@@ -307,6 +300,15 @@
 	console.log(humano.andar());
 	console.log(humano.falar());
 	console.log(humano.feliz());
+
+$(document).ready(function () {
+   // alert("slide_Jquery");
+    $( "#tabs" ).tabs();
+
+    // 1 Estanciando Cclass Poligon
+    //  $( ".p1" ).append('<p>' + inst.getPolyName() + ' <span class=" glyphicon glyphicon-ok"></span> </p>');
+    //poligono.verName();
+});
 
 
 
